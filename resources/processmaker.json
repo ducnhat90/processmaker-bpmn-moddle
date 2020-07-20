@@ -109,6 +109,24 @@
       ]
     },
     {
+        'name': 'EmailTask',
+        'extends': [
+          'bpmn:EmailTask',
+        ],
+        'properties': [
+          {
+            'name': 'scriptRef',
+            'isAttr': true,
+            'type': 'String',
+          },
+          {
+            'name': 'scriptVersion',
+            'isAttr': true,
+            'type': 'String',
+          },
+        ],
+      },
+    {
       "name": "ServiceTask",
       "extends": [
         "bpmn:ServiceTask"
